@@ -1,11 +1,11 @@
 
 import { ProductCartType } from "./Cartypes"
-import { AddressType } from "./ListAddressTypes"
 import { InitialStatePaymentType } from "./PaymentTypes"
+import { InitialStateAddressType } from "./address"
 
 export type OrderType = {
     products:ProductCartType[],
-    address: AddressType,
+    address: InitialStateAddressType,
     payment: InitialStatePaymentType,
     date:string,
     status :string,
@@ -18,7 +18,7 @@ export type SendOrderAction = {
     type: 'SEND_ORDER';
     payload: {
         products:ProductCartType[],
-        address: AddressType,
+        address: InitialStateAddressType,
         payment: InitialStatePaymentType,
         date:string,
         status :string,
