@@ -59,9 +59,9 @@ export const Order = ()=>{
                         delivered ={delivered}
                     />
                     <AreaTitle>
-                        <div className="received">Pedido recebido</div>
-                        <div className="sent">Pedido enviado</div>
-                        <div className="delivered">Pedido entregue</div>
+                        <div className="received">Pedido Recebido</div>
+                        <div className="sent">Pedido Enviado</div>
+                        <div className="delivered">Pedido Entregue</div>
                     </AreaTitle>
                     <LastOrder 
                         data = {state.order.list}
